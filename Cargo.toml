@@ -1,0 +1,19 @@
+[package]
+name = "jsonnet-language-server"
+version = "0.1.0"
+authors = ["Christian Simon <simon@swine.de>"]
+edition = "2018"
+
+[dependencies]
+
+env_logger = "0.7.1"
+log = "0.4.8"
+lsp-server = "0.5.0"
+lsp-types = "0.88.0"
+
+serde_json = "1.0.64"
+serde = { version = "1.0.124", features = ["derive"] }
+
+jrsonnet-parser = {  git = "https://github.com/CertainLach/jrsonnet.git",  rev = "0.3.4"}
+jrsonnet-evaluator = {  git = "https://github.com/CertainLach/jrsonnet.git",  rev = "0.3.4"}
+jrsonnet-types = {  git = "https://github.com/CertainLach/jrsonnet.git",  rev = "0.3.4"}
